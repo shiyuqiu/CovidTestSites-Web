@@ -1,0 +1,178 @@
+
+body {
+  padding: 120px;
+  background:#203139;
+	font-family: 'Varela Round', sans-serif;
+}
+
+
+
+.header {
+    align-content: center;
+    background-color: #E2574C;
+    width: 100%;
+    padding: 3em 5em;
+    margin-bottom: 3em;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    align-content: center;
+    
+}
+h2 {
+ 
+  color: rgb(255, 255, 255);
+    align-content: center;
+    text-align: center;
+}
+
+.subheading {
+    color: rgb(255, 255, 255);
+    align-content: center;
+    text-align: center;
+    padding: 1em 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  background: #34505D;
+  padding: 3em 3em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+ 
+}
+
+.container {
+  margin: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.left, .right {
+  flex-basis: 100%;
+
+}
+
+.left {
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    border: none;
+    line-height: 30px;
+    margin: 10px 1em 10px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+
+.rate {
+  float: left;
+  height: 60px;
+  padding: 2px 2px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★';
+}
+.rate > input:checked ~ label {
+  color: #E2574C;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #E2574C;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #E2574C;
+}
+
+
+input[type="text"],
+input[type="subject"],
+input[type="radio"] {
+  width: 100%;
+  border: none;
+  line-height: 30px;
+  margin: 10px 0 10px;
+  border-radius: 4px;
+  padding-left: 15px;
+}
+
+textarea {
+  padding: 30px;
+  width: 100%;
+  margin: 5px 0 0;
+  border: none;
+  border-radius: px;
+}
+
+button {
+  color: #FFF;
+  background: #E2574C;
+  border: none;
+  margin: 1000px 5px 10px 10px;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .container { 
+    flex-direction: column; 
+  }
+}
+
+table {
+    margin: 3em 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td {
+    padding: 2em;
+}
+
+th {
+    padding: 5%;
+    background-color: #34505D;
+    color:antiquewhite;
+}
+
+.validation {
+    margin-top: 3px;
+    padding: 15%;
+    text-align: center;
+    size: 100px;
+    background-color: #203139;
+    color: azure;
+}
+
+.cleanliness {
+    color: #E2574C; 
+}
+
+
+
+
+
